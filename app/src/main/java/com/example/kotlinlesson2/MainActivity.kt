@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         btn_random.setOnClickListener {
 
-            load(url.random(), iv_avatar)
+            iv_avatar.load(url.random())
+
         }
     }
 
