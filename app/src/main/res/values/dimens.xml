@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopEt">50dp</dimen>
+    <dimen name="paddingEt">16dp</dimen>
+    <dimen name="marginStartEt">16dp</dimen>
+    <dimen name="marginEndEt">16dp</dimen>
+    <dimen name="sizeEt">18sp</dimen>
+    <dimen name="marginStartBtn">16dp</dimen>
+    <dimen name="marginEndBtn">16dp</dimen>
+    <dimen name="marginTopIv">50dp</dimen>
+    <dimen name="MarginTopbtnSubmit">50dp</dimen>
+</resources>
