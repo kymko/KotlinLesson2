@@ -11,6 +11,7 @@ import com.example.kotlinlesson2.R
 import com.example.kotlinlesson2.extension.load
 
 class ImageAdapter(
+
     private val context: Context,
     private val ImgUrls: ArrayList<String>
 ) :
@@ -23,7 +24,6 @@ class ImageAdapter(
         return ViewHolder(view)
 
     }
-
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
 
         Log.e("URLS: ", ImgUrls[i])
@@ -31,12 +31,12 @@ class ImageAdapter(
           viewHolder.img_android.load(ImgUrls[i])
 
     }
-
     override fun getItemCount(): Int {
 
         return ImgUrls.size
 
     }
+
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
