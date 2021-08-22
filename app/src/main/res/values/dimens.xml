@@ -9,4 +9,7 @@
     <dimen name="marginEndBtn">16dp</dimen>
     <dimen name="marginTopIv">50dp</dimen>
     <dimen name="MarginTopbtnSubmit">50dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="top">4dp</dimen>
+    <dimen name="margintop">4dp</dimen>
 </resources>

@@ -15,7 +15,7 @@ fun View.load(url: String) {
 
     val view: ImageView = ImageView(this) as ImageView
 
-    Glide.with(context).load(url).centerCrop().into(view)
+    Glide.with(context).load(url).override(300,300).centerCrop().into(view)
 
 }
 
