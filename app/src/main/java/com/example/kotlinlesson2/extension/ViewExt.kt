@@ -1,8 +1,8 @@
 package com.example.kotlinlesson2.extension
 
 import android.view.View
-import android.widget.ImageView
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.item_list.view.*
 
 var View.visible: Boolean
 
@@ -13,13 +13,6 @@ var View.visible: Boolean
 
 fun View.load(url: String) {
 
-    val view: ImageView = ImageView(this) as ImageView
+    Glide.with(context).load(url).centerCrop().into(imageView)
 
-    Glide.with(context).load(url).override(300,300).centerCrop().into(view)
-
-}
-
-fun ImageView(view: View): View {
-
-    return view
 }

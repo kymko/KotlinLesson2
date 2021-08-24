@@ -1,7 +1,5 @@
 package com.example.kotlinlesson2.adapter
 
-import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,12 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinlesson2.R
 import com.example.kotlinlesson2.extension.load
 
-class ImageAdapter(
-
-    private val context: Context,
-    private val ImgUrls: ArrayList<String>
-) :
-    RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
+class ImageAdapter(private val ImgUrls: ArrayList<String>) : RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
 
@@ -26,9 +19,7 @@ class ImageAdapter(
     }
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
 
-        Log.e("URLS: ", ImgUrls[i])
-
-          viewHolder.img_android.load(ImgUrls[i])
+          viewHolder.image.load(ImgUrls[i])
 
     }
     override fun getItemCount(): Int {
@@ -37,14 +28,9 @@ class ImageAdapter(
 
     }
 
-
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        var img_android: ImageView
+        var image: ImageView = view.findViewById<View>(R.id.imageView) as ImageView
 
-        init {
-            img_android =
-                view.findViewById<View>(R.id.imageView) as ImageView
-        }
     }
 }
