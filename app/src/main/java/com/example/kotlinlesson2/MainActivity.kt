@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var imgUrl: ArrayList<String> = ArrayList()
+    private lateinit var imgUrl: MutableList<String>
     private var recyclerView: RecyclerView? = null
     private var adapter: ImageAdapter? = null
 
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        imgUrl = arrayListOf(
+        imgUrl = mutableListOf(
             "https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285__340.jpg",
             "https://cdn.pixabay.com/photo/2015/07/27/19/47/turtle-863336__340.jpg",
             "https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg",
